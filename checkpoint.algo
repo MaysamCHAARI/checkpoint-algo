@@ -1,0 +1,39 @@
+ALGORITHM algorithm_name
+VAR
+character:CHAR;
+sentence:STRING;
+words_count, num_of_car, i,j, v, k:INTEGER;
+
+BEGIN
+REPEAT
+Read(sentence(i));
+IF (sentence(i)!= (" ")) THEN
+num_of_car:= num_of_car + 1
+i:=i+1
+ELSE
+i:=i+1
+END_IF
+UNTIL (sentence.length-1)
+
+Write(num_of_car)
+
+
+j:=0
+words_count:=1
+REPEAT
+IF (sentence(j)=" ")
+words_count:=words_count+1
+ELSE
+j:=j+1
+UNTIL (sentence.length-1)
+write (words_count)
+
+FOR k FROM 0 TO sentence.length-1 DO
+IF ( (character == 'a' OR character == 'e' OR character == 'i' OR character == 'o'  OR character == 'u');
+) THEN
+v:=v+1
+ELSE
+k:=k+1
+END_IF
+Write ("the number of vowels is"+ v )
+END
